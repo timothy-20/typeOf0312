@@ -16,6 +16,7 @@
 		99EC352525FB479D007044FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EC352425FB479D007044FC /* main.m */; };
 		99EC352F25FB479D007044FC /* typeOf0312Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EC352E25FB479D007044FC /* typeOf0312Tests.m */; };
 		99EC353A25FB479D007044FC /* typeOf0312UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EC353925FB479D007044FC /* typeOf0312UITests.m */; };
+		99EC354B25FB526D007044FC /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EC354825FB4A48007044FC /* DelegateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		99EC353525FB479D007044FC /* typeOf0312UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = typeOf0312UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99EC353925FB479D007044FC /* typeOf0312UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = typeOf0312UITests.m; sourceTree = "<group>"; };
 		99EC353B25FB479D007044FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99EC354725FB4A48007044FC /* DelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
+		99EC354825FB4A48007044FC /* DelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		99EC351125FB4799007044FC /* typeOf0312 */ = {
 			isa = PBXGroup;
 			children = (
+				99EC354A25FB4A4E007044FC /* UI */,
 				99EC351225FB4799007044FC /* AppDelegate.h */,
 				99EC351325FB4799007044FC /* AppDelegate.m */,
 				99EC351525FB4799007044FC /* SceneDelegate.h */,
@@ -135,6 +139,15 @@
 				99EC353B25FB479D007044FC /* Info.plist */,
 			);
 			path = typeOf0312UITests;
+			sourceTree = "<group>";
+		};
+		99EC354A25FB4A4E007044FC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				99EC354725FB4A48007044FC /* DelegateViewController.h */,
+				99EC354825FB4A48007044FC /* DelegateViewController.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +281,7 @@
 			files = (
 				99EC351A25FB4799007044FC /* ViewController.m in Sources */,
 				99EC351425FB4799007044FC /* AppDelegate.m in Sources */,
+				99EC354B25FB526D007044FC /* DelegateViewController.m in Sources */,
 				99EC352525FB479D007044FC /* main.m in Sources */,
 				99EC351725FB4799007044FC /* SceneDelegate.m in Sources */,
 			);

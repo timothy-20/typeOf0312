@@ -6,8 +6,10 @@
 //
 
 #import "ViewController.h"
+#import "DelegateViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *goSecond;
 
 @end
 
@@ -15,8 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
+-(IBAction)goSecondAction:(UIButton *)sender
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    DelegateViewController *view = [storyboard instantiateViewControllerWithIdentifier:@"delegateview"];
+    
+    [view setModalPresentationStyle:UIModalPresentationFullScreen];
+    
+    [self presentViewController:view animated:YES completion:nil];
+}
 
 @end
